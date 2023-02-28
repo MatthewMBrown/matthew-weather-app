@@ -3,13 +3,12 @@ import Forecast from './components/Forecast';
 import Inputs from './components/Inputs';
 import TempartureAndDetails from './components/TempartureAndDetails';
 import TimeAndLocation from './components/TimeAndLocation';
-import TopButtons from './components/TopButtons';
 import getFormattedWeatherData from './services/weatherService';
 import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [query, setQuery] = useState({q: 'Berlin'}) 
+  const [query, setQuery] = useState({q: 'Cape Town'}) 
   const [units, setUnits] = useState('metric') 
   const [weather, setWeather] = useState(null) 
 
